@@ -1,0 +1,2781 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class=""><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="descriptionTag" name="description" content="This is a description for the site.">
+    <title>818 post </title>
+    <link id="favicon" rel="icon" href="https://heyleia.com/images/favicon.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="https://heyleia.com/js/analytics.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://heyleia.com/css/sweetalert.css" rel="stylesheet">
+    <script src="https://heyleia.com/js/swal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:800,800i&amp;display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800,800i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&amp;display=swap" rel="stylesheet">
+    
+    <style id="fontFamilyStyle">
+    
+    h1, h2, h3, h4, h5, h6, h1 div, h2 div, h3 div, h4 div, h5 div, h6 div {
+        font-family: 'Raleway', sans-serif;
+    }
+    p, span, label, a, button, strong, div, em {
+        font-family: 'Open Sans', sans-serif;
+    }
+    </style>
+    <link href="https://heyleia.com/css/leia.css" rel="stylesheet">
+    <script>    
+        $.browser = {}; $.support.opacity = true;
+    </script>
+    <script src="/lib/fancybox/jquery.fancybox-1.3.4.pack.js?v=1710674352"></script>
+    <script src="/lib/fancybox/jquery.easing-1.3.pack.js"></script>
+    <script src="/lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script>
+        var setCategoryClicksBackup = function() {
+            $(".categoryButton").unbind();
+            $('.categoryButton').click(function(){
+                // let offsetHeight = document.getElementById('galleryRowContainer').offsetHeight.toString() + 'px';
+                var value = $(this).attr('data-filter');
+                // $('#galleryRowContainer').css({'min-height':offsetHeight}); 
+
+                // setTimeout(function(){
+                //     $('#galleryRowContainer').animate({'min-height':'0'});
+                // },3000)
+
+                if (value === 'all') {
+                    $('.categoryFilter').show('1000');
+                    $(this).addClass('categoryButtonSelected');
+                    $('.categoryButton').not(this).removeClass('categoryButtonSelected');
+                } else if ($(this).hasClass('categoryButtonSelected')) {
+                    $('.categoryFilter').show('1000');
+                    $(this).removeClass('categoryButtonSelected');
+                    $('.allCategoryButton').addClass('categoryButtonSelected');
+                }
+                else {
+                    $('.categoryFilter').not('.' + value).hide('3000');
+                    $('.categoryFilter').filter('.' + value).show('3000');
+                    $('.allCategoryButton').removeClass('categoryButtonSelected');
+                    $('.categoryButton').not(this).removeClass('categoryButtonSelected');
+                    $(this).toggleClass('categoryButtonSelected');
+                }
+            });
+
+            $("a[rel=scrollGroup]").fancybox({
+                'transitionIn'		: 'fade',
+                'transitionOut'		: 'fade',
+                'titlePosition' 	: 'over',
+                'type'              : 'image',
+                'titleFormat'		: function(title) {
+                    return '<span id="fancybox-title-over">' + title + '';
+                }
+            });
+        }
+    </script>
+    
+</head>
+<body style="">
+<div id="mainMenu" class="noCustomElement">
+    <div id="menuButtonWrap" class="noCustomElement">
+        <button class="menuButton" id="trigger-overlay" althref="null" onclick="document.getElementById('menuOverlaySection').className = 'overlay overlay-contentpush open'">
+            <i class="openMenuIcon fa fa-bars" aria-hidden="true" altonclick="null" althref="null"></i>
+        </button>
+    </div>
+    <div id="menuOverlaySection" class="overlay overlay-contentpush" style="">
+        <div id="menuOuterRow" class="row innerTableContent noCustomElement">
+            <div id="menuBorder" class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 noCustomElement" style="max-height: 755px;">
+                <button id="close-menu" type="button" class="overlay-close" althref="null" onclick="document.getElementById('menuOverlaySection').className = 'overlay overlay-contentpush'">
+                    <i class="closeMenuIcon fa fa-times" aria-hidden="true" altonclick="null" althref="null"></i>
+                </button>
+                <a id="menuTitle" class="navbar-brand page-scroll" altonclick="null" href="#">818 post </a>
+                <ul id="menuItems" class="nav navbar-nav">
+                    
+                <li class="menuItemLi">
+                    <a id="aboutMenuItem" class="menuItemA" altonclick="null" href="#about">About</a>
+                </li>
+                <li class="menuItemLi">
+                    <a id="blogMenuItem" class="menuItemA" altonclick="null" href="#blog">Blog</a>
+                </li><li class="menuItemLi">
+                    <a id="featuresMenuItem" class="menuItemA" altonclick="null" href="#features">Features</a>
+                </li>
+                <li class="menuItemLi">
+                    <a id="galleryMenuItem" class="menuItemA" altonclick="null" href="#gallery">Gallery</a>
+                </li>
+                <li class="menuItemLi">
+                    <a id="testimonialsMenuItem" class="menuItemA" altonclick="null" href="#testimonial">Testimonials</a>
+                </li>
+                <li class="menuItemLi">
+                    <a id="teamMenuItem" class="menuItemA" altonclick="null" href="#team">Team</a>
+                </li>
+                
+                <li class="menuItemLi">
+                    <a id="bookMenuItem" class="menuItemA" altonclick="null" href="/book">Book</a>
+                </li>
+                
+                <li class="menuItemLi">
+                    <a id="contactMenuItem" class="menuItemA" altonclick="null" href="#contact">Contact</a>
+                </li></ul>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        #mainMenu {
+            text-align: center;
+            word-break: break-word;
+        }
+
+        #mainMenu .floatingToolbox {
+            z-index: 10000 !important;
+        }
+
+        #mainMenu .overlay ul {
+            height: auto;
+        }
+
+        #menuButtonWrap {
+            text-align: center;
+            position: fixed;
+            width: 20%;
+            left: 40%;
+            z-index: 1;
+        }
+
+        .menuButton {
+            font-size: 32px;
+            color: white;
+            border: none;
+        }
+
+        #trigger-overlay {
+            position: initial;
+            margin-top: 50px;
+            background: transparent;
+        }
+
+        #close-menu {
+            font-size: 28px;
+            background: transparent;
+            cursor: pointer;
+            color: black;
+            transition: 0.3s;
+        }
+
+        #close-menu:hover {
+            color: rgb(151,76,70);
+        } 
+
+        #menuOverlaySection {
+            display: table;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .overlay-contentpush,
+        .overlay-contentpush.close {
+            visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: visibility 0s 0.5s;
+            transition: visibility 0s 0.5s;
+            -webkit-transition: opacity 0.8s ease-in;
+            -moz-transition: opacity 0.8s ease-in;
+            -o-transition: opacity 0.8s ease-in;
+            opacity: 0;
+        }
+
+        .overlay-contentpush.open {
+            visibility: visible;
+            -webkit-transition: -webkit-transform 0.5s;
+            transition: transform 0.5s;
+            -webkit-transition: opacity 0.8s ease-in;
+            -moz-transition: opacity 0.8s ease-in;
+            -o-transition: opacity 0.8s ease-in;
+            opacity: 1;
+        }
+
+        #menuBorder {
+            border: 2px solid rgb(151,76,70);
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        #menuTitle {
+            font-size: 40px;
+            margin-top: 50px;
+            color: black;
+            width: 100%;
+            text-transform: uppercase;
+            line-height: normal;
+        }
+
+        #menuItems {
+            margin-top: 20px;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        #menuItems .menuItemLi {
+            width: 100%;
+            text-align: center;
+        }
+
+        #menuItems .menuItemLi a {
+            color: black;
+            font-size: 24px;
+        }
+
+        #menuItems .menuItemLi a:hover {
+            color: rgb(151,76,70);
+            background-color: white;
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            #menuTitle,
+            #menuItems {
+                margin-top: 0;
+            }
+        }
+    </style>
+</div>
+        <script>
+            $(document).ready(function() {
+                $('nav').css('display', 'block');
+                $('nav').slideDown();
+            });
+        </script>
+<header style="margin-bottom: 0px;">
+
+        <video playsinline="" webkit-playsinline="" autoplay="" muted="" loop="" id="headerBackgroundVideo" altonclick="null" althref="null" style="min-width: 100%; min-height: 100%;">
+            <source src="/img/blogging-xC0jg-xQACh-fGpIB-pJSEY-J7p0M.mp4" type="video/mp4">
+        </video>
+        <div class="sectionOverlay" id="headerOverlay" style="background: rgba(0, 0, 0, 0.3)"></div>
+        <div id="outerHeader" class="noCustomElement">
+    <div id="headerContainer" class="noCustomElement">
+        <div id="headerContent" class="row noCustomElement">
+            <div id="leftHeader" class="col-lg-8 col-lg-offset-1 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 noCustomElement">
+                <div id="iconBox"><i class="headerIcon fas fa-fire" altonclick="null" althref="null"></i></div>
+                <div id="headerTitleWrap"><h1 id="headerTitle" class="headerTitles" altonclick="null" althref="null">818 post </h1></div>
+                <div id="headerSubtitleWrap"><h3 id="headerSubtitle" class="headerSubtitles" altonclick="null" althref="null">Better hear it from us</h3></div>
+                <div id="headerButtons"><div><a class="headerButton" altonclick="null" althref="null">Email Us</a></div></div>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+
+        #headerContent {
+            color: white; 
+            overflow: hidden;
+            word-break: break-word;
+        }
+
+        #iconBox {
+            margin: 20px 0;
+        }
+
+        .headerIcon {
+            font-size: 36px;
+            padding: 8px 26px;
+            border-radius: 8px;
+            background-color: rgba(151,76,70,0.5);
+            box-shadow: 2px 2px white;
+        }
+
+        #headerTitleWrap {
+            margin-top: 20px;
+        }
+
+        #headerTitle {
+            font-size: 64px;
+            margin-top: 5px;
+        }
+
+        #headerSubtitleWrap {
+            margin-bottom: 30px;
+        }
+
+        #headerSubtitle {
+            font-size: 30px;
+        }
+
+        .headerButton {
+            font-size: 14px;
+            padding: 10px 48px;
+            color: white;
+            text-decoration: none;
+            background-color: rgba(151,76,70,0.5);
+            box-shadow: 2px 2px white;
+            border: none;
+            cursor: pointer;
+            transition: 0.5s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .headerButton:hover {
+            color: white; 
+            background-color: rgba(151,76,70,0.8);
+            box-shadow: 2px 2px rgb(151,76,70);
+            text-decoration: none;
+        }
+
+        header .customTitle {
+            font-size: 30px;
+            display: block;
+        }
+
+        header .customParagraph {
+            font-size: 20px;
+            display: block;
+        }
+
+        header .customLink {
+            color: white;
+            font-size: 20px;
+            display: block;
+            width: 100%;
+        }
+
+        header .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        header .customIcon {
+            font-size: 36px;
+        }
+
+        header .customTitle,
+        header .customParagraph,
+        header .customLink,
+        header .customIcon, 
+        header .customButton,
+        header .customImage,
+        header .customEmbed {
+            margin: 10px 0;
+        }
+        
+        header #iconBox .customTitle,
+        header #iconBox .customParagraph,
+        header #iconBox .customLink,
+        header #iconBox .customIcon, 
+        header #iconBox .customButton,
+        header #iconBox .customImage,
+        header #iconBox .customEmbed {
+            margin: 30px 0 0;
+        }
+       
+        header #headerTitleWrap .customTitle,
+        header #headerTitleWrap .customParagraph,
+        header #headerTitleWrap .customLink,
+        header #headerTitleWrap .customIcon, 
+        header #headerTitleWrap .customButton,
+        header #headerTitleWrap .customImage,
+        header #headerTitleWrap .customEmbed {
+            margin: 0;
+        }
+        
+        header #headerSubtitleWrap .customTitle,
+        header #headerSubtitleWrap .customParagraph,
+        header #headerSubtitleWrap .customLink,
+        header #headerSubtitleWrap .customIcon, 
+        header #headerSubtitleWrap .customButton,
+        header #headerSubtitleWrap .customImage,
+        header #headerSubtitleWrap .customEmbed {
+            margin: 10px 0 0;
+        }
+        
+        header #headerButtons .customTitle,
+        header #headerButtons .customParagraph,
+        header #headerButtons .customLink,
+        header #headerButtons .customIcon, 
+        header #headerButtons .customButton,
+        header #headerButtons .customImage,
+        header #headerButtons .customEmbed {
+            margin: 25px 0 0;
+        }
+
+        @media only screen and (max-width : 1100px) {
+
+            #leftHeader {
+                text-align: center;
+                margin-bottom: 36px;
+            }
+
+            #headerTitle {
+                font-size: 52px;
+            }
+
+            #headerSubtitle {
+                font-size: 24px;
+            }
+        }
+
+        @media only screen and (max-width : 767px) {
+            
+            .headerIcon {
+                font-size: 24px;
+                padding: 4px 20px;
+            }
+
+            header .customTitle {
+                font-size: 24px;
+            }
+
+            header .customParagraph {
+                font-size: 18px;
+            }
+
+            header .customLink,
+            header .customLink a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</div>
+        <style>
+
+            header {
+                height: 100%;
+            }
+            #headerLogoImage {
+                position: fixed;
+                left: 3%;
+                bottom: 10px;
+                width: 200px;
+                max-width: 30%;
+                z-index: 100;
+            }
+        </style>
+        
+        
+        
+    </header>
+    
+
+
+
+
+
+
+
+<section id="blog">
+            <div class="sectionOverlay" id="blogOverlay" style="background: rgba(0 ,0, 0, 0.5)"></div>
+            <div id="outerBlog" class="outerSection noCustomElement">
+    <div id="blogContainer" class="sectionContainer blogImageBg noCustomElement">
+        <div id="blogContent" class="sectionContent container-fluid noCustomElement">
+            <div class="row noCustomElement">
+                <div id="blogTop" class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement">
+                    <div id="blogTitleWrap"><h2 id="blogTitle" class="blogTitles" altonclick="null" althref="null">Our Blog</h2></div>
+                    <div id="blogTitleHrWrap"><hr id="blogTitleHr"></div>
+                </div>
+            </div>
+            <div id="noPostBlog" class="row noCustomElement" style="display: none;">
+                <div id="noPostBlogInner" class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 noCustomElement">
+                    <div id="noPostBlogIconWrap" class="blogIcons"><i class="noPostBlogIcon fas fa-rss-square" altonclick="null" althref="null"></i></div>
+                    <div id="noPostBlogTitleWrap"><h2 id="noPostBlogTitle" altonclick="null" althref="null" class="">There is no content here yet, but check back soon!</h2></div>
+                </div>
+            </div>
+            <div class="row noCustomElement">
+                <div class="col-lg-10 col-lg-offset-1 col-sm-12 col-sm-12 noCustomElement">
+                    <div id="blogRowContainer" class="noCustomElement">
+                        <!-- blogTemplate start --><div class="blog4 row"></div><!-- blogTemplate end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #blog {
+            color: black;
+            word-break: break-word;
+        }
+
+        #blog .blogImageBg {
+            color: white;
+        }
+
+        #blogContent {
+            text-align: center;
+        }
+
+        #noPostBlog {
+            margin-top: 50px;
+        }
+
+        #noPostBlogInner {
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 15px;
+        }
+
+        #blog .blogImageBg #noPostBlogInner {
+            border-color: white;
+        }
+
+        .noPostBlogIcon {
+            font-size: 42px;
+        }
+
+        #noPostBlogTitle {
+            font-size: 30px;
+            letter-spacing: .035em;
+        }
+
+        #blogTitle {
+            font-size: 40px;
+        }
+
+        #blogTitleHr {
+            border: 1px solid black;
+            width: 20%;
+        }
+
+        #blog .blogImageBg #blogTitleHr {
+            border-color: white;
+        }
+
+        .posts4 {
+            display: flex;
+        }
+
+        .postOuter {
+            margin: 30px 0 0;
+        }
+
+        .blogPostLinkWrap {
+            width: 100%;
+            text-decoration: none !important;
+        }
+
+        .postInner {
+            border: 1px solid black;
+            padding: 20px 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .postInner:hover {
+            background-color: rgba(151,76,70,0.1);
+        }
+
+        #blog .blogImageBg .postInner {
+            border-color: white;
+        }
+
+        #blog .blogImageBg .postInner:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+
+        .blogIcon {
+            font-size: 42px;
+            margin: 5px 0 10px;
+        }
+
+        #blog .blogImageBg .blogIcon {
+            color: white;
+        }
+
+        .blogImages {
+            width: 200px;
+            height: 200px;
+            border-radius: 3px;
+            object-fit: cover;
+        }
+
+        #blog .blogImageBg .blogImages {
+            border: 2px solid white;
+        }
+
+        #blogHr {
+            border: 2px solid rgb(151,76,70);
+            width: 50%;
+        }  
+
+        .postTitle {
+            color: black;
+            font-size: 20px;
+        }
+
+        #blog .blogImageBg .postTitle {
+            color: white;
+        }
+
+        /* * * * * * * * */
+
+        #blog .customTitle {
+            font-size: 30px;
+            letter-spacing: .035em;
+            display: block;
+        }
+
+        #blog #noPostBlogTitleWrap .customTitle {
+            font-size: 30px;
+            letter-spacing: normal;
+        }
+
+        #blog .customParagraph {
+            font-size: 18px;
+            display: block;
+        }
+
+        #blog .customLink {
+            color: black;
+            font-size: 18px;
+            display: block;
+            width: 100%;
+        }
+
+        #blog .blogImageBg .customLink {
+            color: white;
+        }
+
+        #blog .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        #blog .customIcon {
+            font-size: 36px;
+        }
+
+        #blog .customTitle,
+        #blog .customParagraph,
+        #blog .customLink,
+        #blog .customIcon,
+        #blog .customButton,
+        #blog .customImage,
+        #blog .customEmbed {
+            margin: 10px 0;
+        }
+
+        #blog #blogTitleWrap .customIcon,
+        #blog #blogTitleWrap .customButton,
+        #blog #blogTitleWrap .customImage {
+            margin: 10px 0 0;
+        }
+        
+        #blog #blogTitleHrWrap .customIcon,
+        #blog #blogTitleHrWrap .customButton,
+        #blog #blogTitleHrWrap .customImage {
+            margin: 0;
+        }
+
+        #blog #noPostBlogIconWrap .customTitle,
+        #blog #noPostBlogIconWrap .customParagraph,
+        #blog #noPostBlogIconWrap .customLink,
+        #blog #noPostBlogIconWrap .customIcon,
+        #blog #noPostBlogIconWrap .customButton,
+        #blog #noPostBlogIconWrap .customImage,
+        #blog #noPostBlogIconWrap .customEmbed {
+            margin: 20px 0 0;
+        }
+
+        @media only screen and (max-width : 991px) {
+
+            .posts4 {
+                display: initial;
+                margin: 0;
+            }
+
+            .blogImages {
+                width: 280px;
+                height: 280px;
+            }
+        }
+
+        @media only screen and (max-width : 800px) {
+
+            .postTitle {
+                font-size: 18px;
+            }
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            .postOuter {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</div>
+            <style>
+                #blogContainer {
+                background: url('/img/W040j-0hreZ-nOcUN-tatv5-aMbKo.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            </style>
+            <script>
+                // script start
+                $(document).ready(function() {
+                    setTimeout(function() {
+                        checkBlogStatus();
+                    }, 1000);
+                });
+                
+                var checkBlogStatus = function() {
+                    if (document.getElementsByClassName('blogPost').length === 0 || (document.getElementsByClassName('blogPost').length === 1 && document.getElementsByClassName('blogPost')[0].innerHTML.trim() === '')) {
+                        document.getElementById('noPostBlog').style.display = '';
+                    }
+                }
+                // script end
+            </script>
+        </section><section id="features">
+            <div class="sectionOverlay" id="featuresOverlay" style="background: rgba(0 ,0, 0, 0.5)"></div>
+            <div id="outerFeatures" class="outerSection noCustomElement">
+    <div id="featuresContainer" class="sectionContainer featuresImageBg noCustomElement">
+        <div id="featuresContent" class="sectionContent container-fluid noCustomElement">
+            <div id="featuresRow" class="row noCustomElement">
+                <div class="outerGrid col-sm-5 col-sm-offset-1 col-xs-12 noCustomElement">
+                    <div class="innerGridTable noCustomElement">
+                        <div class="innerTableContent noCustomElement">
+                            <div id="featuresImage"><img class="featuresImages" id="featuresImg" src="/img/W040j-0hreZ-nOcUN-tatv5-aMbKo.jpeg" altonclick="null" althref="null"></div>
+                        </div>
+                    </div>
+                </div> 
+                <div id="featuresInfoSide" class="outerGrid col-sm-5 col-xs-12 noCustomElement">
+                    <div class="innerGridTable noCustomElement">
+                        <div class="innerTableContent noCustomElement">
+                            <div id="featuresTitleWrap"><h2 id="featuresTitle" class="featuresTitles" altonclick="null" althref="null">Our Values</h2></div>
+                            <div id="featuresParagraphWrap"><p id="featuresParagraph" class="featuresParagraph" altonclick="null" althref="null">We know how important Blogging is to the value of our customers. As a Blogging group, the services provided include everything you need in one place and at the best quiality. We will also expertly perform all that is necessary to transition you from your current solution over to ours. In a world that is constantly changing, you can be sure that the folks here will be by your side with every step of the process.</p></div>
+                            <div id="featuresRowContainer" class="noCustomElement">
+                                <!-- featuresTemplate start --><div class="features1 row noCustomElement">
+                                    <div class="featuresTemplate">
+                                        <div class="featuresIconInner outerGrid col-sm-6 col-xs-5 noCustomElement">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="featuresIcons innerTableContent"><i class="featuresIcon fas fa-adjust" altonclick="null" althref="null"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="featuresHeaderWrap outerGrid col-sm-6 col-xs-6 noCustomElement ">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="headerWrap innerTableContent noCustomElement">
+                                                    <h5 class="featuresHeader" altonclick="null" althref="null">Diverse</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div><div class="features1 row noCustomElement">
+                                    <div class="featuresTemplate">
+                                        <div class="featuresIconInner outerGrid col-sm-6 col-xs-5 noCustomElement">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="featuresIcons innerTableContent"><i class="featuresIcon fas fa-cloud" altonclick="null" althref="null"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="featuresHeaderWrap outerGrid col-sm-6 col-xs-6 noCustomElement ">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="headerWrap innerTableContent noCustomElement">
+                                                    <h5 class="featuresHeader" altonclick="null" althref="null">Cutting Edge</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div><div class="features1 row noCustomElement">
+                                    <div class="featuresTemplate">
+                                        <div class="featuresIconInner outerGrid col-sm-6 col-xs-5 noCustomElement">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="featuresIcons innerTableContent"><i class="featuresIcon far fa-handshake" altonclick="null" althref="null"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="featuresHeaderWrap outerGrid col-sm-6 col-xs-6 noCustomElement ">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="headerWrap innerTableContent noCustomElement">
+                                                    <h5 class="featuresHeader" altonclick="null" althref="null">Personable</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div><div class="features1 row noCustomElement">
+                                    <div class="featuresTemplate">
+                                        <div class="featuresIconInner outerGrid col-sm-6 col-xs-5 noCustomElement">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="featuresIcons innerTableContent"><i class="featuresIcon fa fa-globe" altonclick="null" althref="null"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="featuresHeaderWrap outerGrid col-sm-6 col-xs-6 noCustomElement ">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="headerWrap innerTableContent noCustomElement">
+                                                    <h5 class="featuresHeader" altonclick="null" althref="null">Global</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div><div class="features1 row noCustomElement">
+                                    <div class="featuresTemplate">
+                                        <div class="featuresIconInner outerGrid col-sm-6 col-xs-5 noCustomElement">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="featuresIcons innerTableContent"><i class="featuresIcon fa fa-briefcase" altonclick="null" althref="null"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="featuresHeaderWrap outerGrid col-sm-6 col-xs-6 noCustomElement ">
+                                            <div class="innerGridTable noCustomElement">
+                                                <div class="headerWrap innerTableContent noCustomElement">
+                                                    <h5 class="featuresHeader" altonclick="null" althref="null">Professional</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div><!-- featuresTemplate end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        #features {
+            color: black;
+        }
+
+        #features .featuresImageBg {
+            color: white;
+        }
+
+        .featuresImages {
+            width: 100%;
+        }
+
+        #features .featuresImageBg .featuresImages {
+            border: 2px solid white;
+        }
+
+        #featuresRow,
+        .features1 {
+            display: flex;
+        }
+
+        #featuresTitle {
+            margin-top: 0;
+            font-size: 30px;
+        }
+
+        #featuresParagraph {
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 24px 0;
+        }
+
+        .features1 {
+            margin-top: 28px;
+            display: flex;
+        }
+
+        .featuresTemplate {
+            width: 100%;
+        }
+
+        .featuresIconInner {
+            padding-right: 0;
+            text-align: right;
+        }
+
+        .featuresIcon {
+            font-size: 40px;
+        }
+
+        .featuresHeaderWrap {
+            text-align: left;
+        }
+    
+        .featuresHeader {
+            font-size: 16px;
+        }
+
+        .headerWrap {
+            border-left: 2px solid rgb(151,76,70);
+            padding-left: 10px;
+        }
+
+        #features .featuresImageBg .headerWrap {
+            border-color: white;
+        }
+
+        #features .customTitle {
+            font-size: 30px;
+            display: block;
+        }
+
+        #features #featuresRowContainer .customTitle {
+            font-size: 16px;
+        }
+
+        #features .customParagraph {
+            font-size: 13px;
+            line-height: 1.6;
+            display: block;
+        }
+        
+        #features #featuresRowContainer .customParagraph {
+            line-height: normal;
+        }
+
+        #features .customLink {
+            color: black;
+            font-size: 15px;
+            display: block;
+            width: 100%;
+        }
+
+        #features .featuresImageBg .customLink {
+            color: white;
+        }
+
+        #features .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        #features .customIcon {
+            font-size: 30px;
+        }
+
+        #features .customTitle,
+        #features .customParagraph,
+        #features .customLink,
+        #features .customIcon, 
+        #features .customButton,
+        #features .customImage,
+        #features .customEmbed {
+            margin: 10px 0;
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            #featuresRow {
+                display: initial;
+            }
+
+            #featuresTitle {
+                margin: 32px 0;
+            }
+
+            #featuresParagraphWrap {
+                margin-bottom: 38px; 
+            }
+
+            #featuresParagraph {
+                line-height: 1.75;
+            }
+
+            .features1 {
+                margin-top: 30px;
+            }
+
+            #features .customParagraph {
+                line-height: 1.75;
+            }
+        }
+    </style>
+</div>
+            <style>
+                #featuresContainer {
+                background: url('/img/uPrqT-IMhqO-3kjJE-KDwYM-99rG6.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            </style>
+        </section><section id="testimonial">
+            <div class="sectionOverlay" id="testimonialsOverlay" style="background: rgba(0 ,0, 0, 0.5)"></div>
+            <div id="outerTestimonial" class="outerSection noCustomElement" style="opacity: 1;">
+    <div id="testimonialContainer" class="sectionContainer testimonialImageBg noCustomElement">
+        <div id="testimonialContent" class="sectionContent container-fluid noCustomElement">
+            <div class="row noCustomElement">
+                <div class="col-md-8 col-md-offset-2 col-xs-12 noCustomElement">
+                    <div id="testimonialTop" class="row noCustomElement">
+                        <div id="testimonialTitleOuter" class="col-sm-8 col-lg-offset-2 col-md-offset-1 col-sm-offset-2 col-xs-12">
+                            <div id="testimonialTitleWrap"><h2 id="testimonialTitle" class="testimonialTitles" altonclick="null" althref="null">Our Testimonials</h2></div>
+                            <div id="testimonialSubtitleWrap"><h4 id="testimonialSubtitle" class="testimonialSubtitles" altonclick="null" althref="null">Check out our happy customers</h4></div>
+                            <div id="testimonialTitleHrWrap"><hr id="testimonialTitleHr"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row noCustomElement">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 noCustomElement">
+                    <div class="carousel slide noCustomElement" data-ride="carousel" id="quote-carousel" data-keyboard="false">
+                        <ol id="testimonialIndicatorContainer" class="carousel-indicators"><li data-target="#quote-carousel" data-slide-to="0" class="active"></li><li data-target="#quote-carousel" data-slide-to="1"></li><li data-target="#quote-carousel" data-slide-to="2"></li><li data-target="#quote-carousel" data-slide-to="3"></li></ol>
+                        <div id="testimonialRowContainer" class="carousel-inner noCustomElement">
+                            <!-- testimonialTemplate start --><!-- testimonialTemplate end -->
+                        <div class="item testimonial1 row noCustomElement active" style="opacity: 1;"><div class="col-sm-10 col-sm-offset-1 col-xs-12 noCustomElement">   
+                                    <blockquote class="testimonialCard">
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="outerGrid col-sm-8 col-sm-offset-1 col-xs-12 noCustomElement">
+                                                <div class="innerGridTable noCustomElement">
+                                                    <div class="testimonialInfo innerTableContent noCustomElement">
+                                                        <div class="testimonialParagraphWrap"><p class="testimonialParagraph" altonclick="null" althref="null">Unbelievable job. Very glad I chose to reach out to these guys to learn more. I recommend you do the same.</p></div>
+                                                        <div class="blockquoteSourceWrap"><p class="blockquoteSource" altonclick="null" althref="null">Shaun</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testIconOuter outerGrid col-sm-2 col-xs-12 noCustomElement">
+                                                <div class="innerGridTable noCustomElement">
+                                                    <div class="innerTableContent noCustomElement">
+                                                        <div class="testimonialInfoIconWrap"><i class="testimonialInfoIcon testimonialIcon far fa-comment" altonclick="null" althref="null"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div></div><div class="item testimonial1 row noCustomElement" style="opacity: 1;"><div class="col-sm-10 col-sm-offset-1 col-xs-12 noCustomElement">   
+                                    <blockquote class="testimonialCard">
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="outerGrid col-sm-8 col-sm-offset-1 col-xs-12 noCustomElement">
+                                                <div class="innerGridTable noCustomElement">
+                                                    <div class="testimonialInfo innerTableContent noCustomElement">
+                                                        <div class="testimonialParagraphWrap"><p class="testimonialParagraph" altonclick="null" althref="null">These guys were great! I absolutely loved every aspect of using their services. Way to go team.</p></div>
+                                                        <div class="blockquoteSourceWrap"><p class="blockquoteSource" altonclick="null" althref="null">Brooke</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testIconOuter outerGrid col-sm-2 col-xs-12 noCustomElement">
+                                                <div class="innerGridTable noCustomElement">
+                                                    <div class="innerTableContent noCustomElement">
+                                                        <div class="testimonialInfoIconWrap"><i class="testimonialInfoIcon testimonialIcon far fa-comment" altonclick="null" althref="null"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div></div><div class="item testimonial1 row noCustomElement" style="opacity: 1;"><div class="col-sm-10 col-sm-offset-1 col-xs-12 noCustomElement">   
+                                    <blockquote class="testimonialCard">
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="outerGrid col-sm-8 col-sm-offset-1 col-xs-12 noCustomElement">
+                                                <div class="innerGridTable noCustomElement">
+                                                    <div class="testimonialInfo innerTableContent noCustomElement">
+                                                        <div class="testimonialParagraphWrap"><p class="testimonialParagraph" altonclick="null" althref="null">Never had a better experience than working with this team. Such a great job, guys. Keep it up!</p></div>
+                                                        <div class="blockquoteSourceWrap"><p class="blockquoteSource" altonclick="null" althref="null">Jordan</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testIconOuter outerGrid col-sm-2 col-xs-12 noCustomElement">
+                                                <div class="innerGridTable noCustomElement">
+                                                    <div class="innerTableContent noCustomElement">
+                                                        <div class="testimonialInfoIconWrap"><i class="testimonialInfoIcon testimonialIcon far fa-comment" altonclick="null" althref="null"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div></div><div class="item testimonial1 row noCustomElement" style="opacity: 1;">
+                                <div class="col-sm-10 col-sm-offset-1 col-xs-12 noCustomElement">   
+                                    <blockquote class="testimonialCard">
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="outerGrid col-sm-8 col-sm-offset-1 col-xs-12 noCustomElement">
+                                                <div class="innerGridTable noCustomElement">
+                                                    <div class="testimonialInfo innerTableContent noCustomElement">
+                                                        <div class="testimonialParagraphWrap"><p class="testimonialParagraph" altonclick="null" althref="null">Such a pleasure working with the team here. 11 out of 10 EASY! You should definitely get in touch with them.</p></div>
+                                                        <div class="blockquoteSourceWrap"><p class="blockquoteSource" altonclick="null" althref="null">Mark</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testIconOuter outerGrid col-sm-2 col-xs-12 noCustomElement">
+                                                <div class="innerGridTable noCustomElement">
+                                                    <div class="innerTableContent noCustomElement">
+                                                        <div class="testimonialInfoIconWrap"><i class="testimonialInfoIcon testimonialIcon far fa-comment" altonclick="null" althref="null"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                </div></div>
+                        <a data-slide="prev" data-target="#quote-carousel" class="testimonialCarouselIcons left carousel-control" althref="null" altonclick="null"><i class="testimonialCarouselIcon fa fa-chevron-left" altonclick="null" althref="null"></i></a>
+                        <a data-slide="next" data-target="#quote-carousel" class="testimonialCarouselIcons right carousel-control" althref="null" altonclick="null"><i class="testimonialCarouselIcon fa fa-chevron-right" altonclick="null" althref="null"></i></a>
+                    </div>                          
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #testimonial {
+            color: black;
+        }
+
+        #testimonial .testimonialImageBg {
+            color: white;
+        }
+
+        #testimonialContent {
+            word-wrap: break-word;
+            padding-bottom: 120px;
+        }
+
+        #testimonialTop {
+            margin-bottom: 28px;
+        }
+
+        #testimonialTitleOuter {
+            border-left: 4px solid rgb(151,76,70);
+        }
+
+        #testimonial .testimonialImageBg #testimonialTitleOuter {
+            border-color: white;
+        }
+
+        #testimonialTitleWrap {
+            margin: 5px 0 10px;
+        }
+
+        #testimonialTitle {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        #testimonialSubtitleWrap {
+            margin-bottom: 10px;
+        }
+        
+        #testimonialSubtitle {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        #testimonialTitleHr {
+            margin: 0;
+            display: none;
+        }
+
+        #quote-carousel {
+            padding: 0 10px 30px 10px;
+            margin-top: 30px;
+        }
+
+        #quote-carousel .carousel-control {
+            background: none;
+            color: rgb(151,76,70);
+            font-size: 2.3em;
+            text-shadow: none;
+            margin-top: 30px;
+        }
+
+        #testimonial .testimonialImageBg #quote-carousel .carousel-control {
+            color: white;
+        }
+
+        #quote-carousel .carousel-control.left {
+            left: -12px;
+        }
+
+        #quote-carousel .carousel-control.right {
+            right: -12px;
+        }
+
+        #quote-carousel .carousel-indicators {
+            bottom: -60px;
+        }
+
+        #quote-carousel .carousel-indicators li {
+            background: rgba(151,76,70,0.3);
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 5px 6px 0;
+        }
+
+        #quote-carousel .carousel-indicators .active {
+            background: rgb(151,76,70);
+        }
+
+        #testimonial .testimonialImageBg #quote-carousel .carousel-indicators .active {
+            background: white;
+        }
+
+        .testimonialCarouselIcons {
+            cursor: pointer;
+        }
+
+        .testimonialRow {
+            display: flex;
+        }
+
+        .testimonialInfo {
+            text-align: right;
+            border-right: 4px solid rgb(151,76,70);
+            padding-right: 35px;
+        }
+
+        #testimonial .testimonialImageBg .testimonialInfo {
+            border-color: white;
+        }
+
+        .item blockquote {
+            border-left: none; 
+            margin: 0;
+        }
+
+        .testimonialParagraph {
+            font-size: 16px;
+        }
+
+        blockquote p:before {
+            display: none;
+        }
+
+        .blockquoteSource {
+            color: black;
+            font-size: 12px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        #testimonial .testimonialImageBg .blockquoteSource {
+            color: white;
+        }
+
+        .testimonialInfoIcon{
+            font-size: 60px;
+        }
+
+        /* * * * * * * * */
+
+        #testimonial .customTitle {
+            font-size: 42px;
+            display: block;
+        }
+
+        #testimonial .testimonialCard .customTitle {
+            font-size: 24px;
+        }
+
+        #testimonial .customParagraph {
+            font-size: 18px;
+            display: block;
+        }
+
+        #testimonial .testimonialCard .customParagraph {
+            font-size: 16px;
+        }
+
+        #testimonial .customLink {
+            color: black;
+            font-size: 18px;
+            display: block;
+            width: 100%;
+        }
+
+        #testimonial .testimonialCard .customLink {
+            font-size: 16px;
+        }
+
+        #testimonial .testimonialImageBg .customLink {
+            color: white;
+        }
+
+        #testimonial .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        #testimonial .customIcon {
+            font-size: 32px;
+        }
+        
+        #testimonial .blockquoteSourceWrap .customIcon {
+            font-size: 26px;
+        }
+
+        #testimonial .customTitle,
+        #testimonial .customParagraph,
+        #testimonial .customLink,
+        #testimonial .customIcon,
+        #testimonial .customButton,
+        #testimonial .customImage,
+        #testimonial .customEmbed {
+            margin: 10px 0;
+        }
+
+        #testimonial #testimonialTitleWrap .customIcon,
+        #testimonial #testimonialTitleWrap .customButton,
+        #testimonial #testimonialTitleWrap .customImage {
+            margin: 10px 0 5px;
+        }
+        
+        #testimonial #testimonialSubtitleWrap .customIcon,
+        #testimonial #testimonialSubtitleWrap .customButton,
+        #testimonial #testimonialSubtitleWrap .customImage {
+            margin: 10px 0 0;
+        }
+
+        #testimonial .testimonialParagraphWrap .customTitle,
+        #testimonial .testimonialParagraphWrap .customParagraph,
+        #testimonial .testimonialParagraphWrap .customLink,
+        #testimonial .testimonialParagraphWrap .customIcon,
+        #testimonial .testimonialParagraphWrap .customButton,
+        #testimonial .testimonialParagraphWrap .customImage,
+        #testimonial .testimonialParagraphWrap .customEmbed,
+        #testimonial .blockquoteSourceWrap .customTitle,
+        #testimonial .blockquoteSourceWrap .customParagraph,
+        #testimonial .blockquoteSourceWrap .customLink,
+        #testimonial .blockquoteSourceWrap .customIcon,
+        #testimonial .blockquoteSourceWrap .customButton,
+        #testimonial .blockquoteSourceWrap .customImage,
+        #testimonial .blockquoteSourceWrap .customEmbed {
+            margin: 0 0 5px;
+        }
+
+        @media (max-width: 767px) { 
+
+            #testimonialTop {
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            #testimonialTitleOuter {
+                border-left: none;
+            }
+
+            #testimonialTitle {
+                font-size: 35px;
+            }
+
+            #testimonialSubtitleWrap {
+                margin-bottom: 20px;
+            }
+
+            #testimonialSubtitle {
+                font-size: 20px;
+            }
+
+            #testimonialTitleHr {
+                border: 2px solid rgb(151,76,70);
+                display: block;
+                margin: 0 auto;
+                width: 20%;
+            }
+
+            #testimonial .testimonialImageBg #testimonialTitleHr {
+                border-color: white;
+            }
+
+            #quote-carousel .carousel-indicators li {
+                margin: 5px 2px 0;
+            }
+        
+            #quote-carousel .carousel-control.left {
+                top: 100px;
+            }
+    
+            #quote-carousel .carousel-control.right {
+                top: 100px;
+            }
+            
+            .testimonialRow {
+                display: initial;
+            }
+
+            .testimonialInfo {
+                text-align: center;
+                border-right: none;
+                border-bottom: 4px solid rgb(151,76,70);
+                padding-right: 0;
+                padding-bottom: 20px;
+            }
+
+            .testIconOuter {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .testimonialInfoIcon{
+                font-size: 80px;
+            }
+        }
+    </style>
+    
+</div>
+            <style>
+                #testimonialContainer {
+                background: url('/img/3fw0m-mDFqU-wA8KL-8Hfvy-c6Nl6.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            </style>
+            <script>
+                // script start
+                $(document).ready(function() {
+                    setTimeout(function() {
+                        initializeCarousel();
+                    }, 3000);
+                });
+               
+                var initializeCarousel = function() {
+                    /*if (window.parent === window.self) {
+                        $('#quote-carousel').data('bs.carousel').options.interval = 6000;
+                    } else {*/
+                        //$('#quote-carousel').data('bs.carousel').options.interval = 10000;
+                        $('#quote-carousel').carousel('pause'); 
+                        setInterval(function() {
+                            $('#quote-carousel').carousel('pause'); 
+                        }, 10000);
+                    //} 
+                }
+                // script end
+            </script>
+        </section><section id="gallery">
+            <script>
+                // script start 
+                $.browser = {}; $.support.opacity = true;
+                // script end
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+            <script src="/lib/fancybox/jquery.easing-1.3.pack.js"></script>
+            <script src="/lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+            <link href="/lib/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+            <div class="sectionOverlay" id="galleryOverlay" style="background: rgba(0, 0, 0, 0)"></div>
+            <div id="outerGallery" class="outerSection noCustomElement">
+    <div id="galleryContainer" class="sectionContainer noCustomElement">
+        <div id="galleryContent" class="sectionContent container-fluid noCustomElement">
+            <div class="row noCustomElement">
+                <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 noCustomElement">
+                    <div id="galleryTop" class="row noCustomElement">
+                        <div class="col-sm-12 noCustomElement">
+                            <div id="galleryTitleWrap"><h2 id="galleryTitle" class="galleryTitles" altonclick="null" althref="null">Portfolio</h2></div>
+                        </div>
+                        <div id="categoryButtonOuter" class="col-sm-10 col-sm-offset-1 col-xs-12 noCustomElement">
+                            <div id="categoryButtonContainer">
+                                <div id="categoryButtonRow" class="buttons4 noCustomElement">
+                                    <div class="categoryButtonContainer noCustomElement">
+                                        <div class="categoryButtonWrap noCustomElement"><a id="allCategoriesBtn" class="categoryButton allCategoryButton categoryButtonSelected" data-filter="all" altonclick="null" althref="null">All</a></div>
+                                    </div>
+                                    <div class="categoryButtonContainer noCustomElement">
+                                        <div class="categoryButtonWrap noCustomElement"><a class="categoryButton" data-filter="category1" altonclick="null" althref="null">Category 1</a></div>
+                                    </div>
+                                    <div class="categoryButtonContainer noCustomElement">
+                                        <div class="categoryButtonWrap noCustomElement"><a class="categoryButton" data-filter="category2" altonclick="null" althref="null">Category 2</a></div>
+                                    </div>
+                                    <div class="categoryButtonContainer noCustomElement">
+                                        <div class="categoryButtonWrap noCustomElement"><a class="categoryButton" data-filter="category3" altonclick="null" althref="null">Category 3</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="galleryRowContainer" class="noCustomElement">
+                        <!-- galleryTemplate start --><div class="gallery3 row">
+                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category1" style="">
+                                <div class="innerGridTable galleryImage noCustomElement">
+                                    <a rel="scrollGroup" href="https://818post.site.live/img/blogging-gG2G8-K5Pku-JudwD-3Y8vS-I1I4w.jpeg" class="fancybox innerTableContent" title="Photo 1" altonclick="null">
+                                        <img class="galleryImages img-fluid" src="https://818post.site.live/img/blogging-gG2G8-K5Pku-JudwD-3Y8vS-I1I4w.jpeg" altonclick="null" althref="null">
+                                    </a>
+                                </div>
+                                <h4 class="galleryText" altonclick="null" althref="null">Photo 1</h4>
+                            </div>
+                            
+                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category2" style="display: grid;">
+                                <div class="innerGridTable galleryImage noCustomElement">
+                                    <a rel="scrollGroup" href="/img/pJiHX-cxOJO-WkwQ9-ll8Js-Ibp90.jpeg" class="fancybox innerTableContent" title="Photo 2" altonclick="null">
+                                        <img class="galleryImages img-fluid" src="/img/pJiHX-cxOJO-WkwQ9-ll8Js-Ibp90.jpeg" altonclick="null" althref="null">
+                                    </a>
+                                </div>
+                                <h4 class="galleryText" altonclick="null" althref="null">Photo 2</h4>
+                            </div>
+                            
+                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category3" style="display: grid;">
+                                <div class="innerGridTable galleryImage noCustomElement">
+                                    <a rel="scrollGroup" href="/img/blogging-N5lNR-DKH9r-M7QcA-6m5vv-yDqMl.jpeg" class="fancybox innerTableContent" title="Photo 3" altonclick="null">
+                                        <img class="galleryImages img-fluid" src="/img/blogging-N5lNR-DKH9r-M7QcA-6m5vv-yDqMl.jpeg" altonclick="null" althref="null">
+                                    </a>
+                                </div>
+                                <h4 class="galleryText" altonclick="null" althref="null">Photo 3</h4>
+                            </div>
+                            
+                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category1" style="">
+                                <div class="innerGridTable galleryImage noCustomElement">
+                                    <a rel="scrollGroup" href="/img/hWwNV-gnfdF-a7gH7-SWStK-u4AWc.jpeg" class="fancybox innerTableContent" title="Photo 4" altonclick="null">
+                                        <img class="galleryImages img-fluid" src="/img/hWwNV-gnfdF-a7gH7-SWStK-u4AWc.jpeg" altonclick="null" althref="null">
+                                    </a>
+                                </div>
+                                <h4 class="galleryText" altonclick="null" althref="null">Photo 4</h4>
+                            </div>
+                            
+                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category2" style="display: grid;">
+                                <div class="innerGridTable galleryImage noCustomElement">
+                                    <a rel="scrollGroup" href="/img/5cqJs-EW9Z8-MTpM5-cF8hJ-eBXLo.jpeg" class="fancybox innerTableContent" title="Photo 5" altonclick="null">
+                                        <img class="galleryImages img-fluid" src="/img/5cqJs-EW9Z8-MTpM5-cF8hJ-eBXLo.jpeg" altonclick="null" althref="null">
+                                    </a>
+                                </div>
+                                <h4 class="galleryText" altonclick="null" althref="null">Photo 5</h4>
+                            </div>
+                            
+                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category3" style="display: grid;">
+                                <div class="innerGridTable galleryImage noCustomElement">
+                                    <a rel="scrollGroup" href="/img/Bj4fC-GqkPu-OgecM-1OTOZ-FJ0hZ.jpeg" class="fancybox innerTableContent" title="Photo 6" altonclick="null">
+                                        <img class="galleryImages img-fluid" src="/img/Bj4fC-GqkPu-OgecM-1OTOZ-FJ0hZ.jpeg" altonclick="null" althref="null">
+                                    </a>
+                                </div>
+                                <h4 class="galleryText" altonclick="null" althref="null">Photo 6</h4>
+                            </div>
+                            </div><!-- galleryTemplate end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #gallery {
+            color: black;
+        }
+
+        #gallery .galleryImageBg {
+            color: white;
+        }
+
+        #galleryContent {
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        #galleryTitle {
+            font-size: 50px;
+            margin: 10px 0 40px;
+        }
+
+        #categoryButtonOuter {
+            margin-bottom: 20px;
+        }
+
+        .categoryButtonContainer {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .categoryButton {
+            color: black;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+            display: inline-block;
+            padding: 6px 32px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: 0.5s;
+            display: inline-block;
+        }
+
+        #gallery .galleryImageBg .categoryButton {
+            color: white;
+            background: transparent;
+            border-color: white;
+        }
+
+        .categoryButton:hover,
+        .categoryButton:focus,
+        .categoryButtonSelected {
+            color: black;
+            box-shadow: 0 0 20px rgb(151,76,70);
+            background-color: white;
+            text-decoration: none;
+        }
+
+        #gallery .galleryImageBg .categoryButtonSelected,
+        #gallery .galleryImageBg .categoryButton:hover,
+        #gallery .galleryImageBg .categoryButton:focus, {
+            color: black;
+        }
+
+        .categoryFilter {
+            margin-top: 40px;
+        }
+
+        .galleryImages {
+            height: 350px;
+            width: 100%;
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .galleryImages:hover {
+            transform: scale(1.03);
+        }
+
+        #gallery .galleryImageBg .galleryImages {
+            border: 2px solid white;
+        }
+
+        .galleryText {
+            font-size: 20px;
+            margin-top: 15px;
+            height: 1px;
+        }
+
+        #gallery .galleryImageBg .galleryText {
+            color: white !important;
+        }
+
+        .galleryText:hover {
+            text-decoration: none;
+        }
+
+        #fancybox-content {
+            background: white;
+        }
+
+        #fancybox-title {
+            margin-left: 0 !important;
+            background: white;
+        }
+
+        #fancybox-title-over {
+            color: black;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fancybox-close {
+            right: -35px;
+        }
+
+        #fancybox-right {
+            right: -20px;
+        }
+
+        #fancybox-bg-nw,
+        #fancybox-bg-ne,
+        #fancybox-bg-sw,
+        #fancybox-bg-se {
+            display: none;
+        }
+
+        /* * * * * * * * * */
+
+        #gallery .customTitle {
+            font-size: 40px;
+            display: block;
+        }
+
+        #gallery .customParagraph {
+            font-size: 18px;
+            display: block;
+        }
+
+        #gallery .customLink {
+            color: black;
+            font-size: 18px;
+            display: block;
+            width: 100%;
+        }
+
+        #gallery .galleryImageBg .customLink {
+            color: white;
+        }
+
+        #gallery .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        #gallery .customIcon {
+            font-size: 32px;
+        }
+
+        #gallery .customTitle,
+        #gallery .customParagraph,
+        #gallery .customLink,
+        #gallery .customIcon, 
+        #gallery .customButton, 
+        #gallery .customImage,
+        #gallery .customEmbed {
+            margin: 10px 0;
+        }
+
+        @media only screen and (max-width : 1050px) {
+
+            .galleryImages {
+                height: 300px;
+            }
+        }
+
+        @media only screen and (max-width : 800px) {
+
+            #galleryTop {
+                border-radius: 0;
+            }
+
+            .galleryImages {
+                height: 280px;
+            }
+        }
+                            
+        @media only screen and (max-width : 767px) {
+
+            #galleryTitle {
+                font-size: 40px;
+            }
+
+            .categoryButton {
+                margin-top: 10px;
+            }
+
+            .galleryImages {
+                height: 350px;
+            }
+
+            #gallery .customParagraph {
+                font-size: 14px;
+            }
+
+            #gallery .customLink {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+    // script start
+    
+        var setCategoryClicks = function() {
+            $(".categoryButton").unbind();
+            $('.categoryButton').click(function(){
+                // let offsetHeight = document.getElementById('galleryRowContainer').offsetHeight.toString() + 'px';
+                var value = $(this).attr('data-filter');
+                // $('#galleryRowContainer').css({'min-height':offsetHeight}); 
+
+                // setTimeout(function(){
+                //     $('#galleryRowContainer').animate({'min-height':'0'});
+                // },3000)
+
+                if (value === 'all') {
+                    $('.categoryFilter').show('1000');
+                    $(this).addClass('categoryButtonSelected');
+                    $('.categoryButton').not(this).removeClass('categoryButtonSelected');
+                } else if ($(this).hasClass('categoryButtonSelected')) {
+                    $('.categoryFilter').show('1000');
+                    $(this).removeClass('categoryButtonSelected');
+                    $('.allCategoryButton').addClass('categoryButtonSelected');
+                }
+                else {
+                    $('.categoryFilter').not('.' + value).hide('3000');
+                    $('.categoryFilter').filter('.' + value).show('3000');
+                    $('.allCategoryButton').removeClass('categoryButtonSelected');
+                    $('.categoryButton').not(this).removeClass('categoryButtonSelected');
+                    $(this).toggleClass('categoryButtonSelected');
+                }
+            });
+
+            $("a[rel=scrollGroup]").fancybox({
+                'transitionIn'		: 'fade',
+                'transitionOut'		: 'fade',
+                'titlePosition' 	: 'inside',
+                'type'              : 'image',
+                'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">' + title + '</span>';
+                }
+            });
+        }
+
+    // script end
+    </script>
+</div>
+            <style>
+                #galleryContainer {
+                background: rgb(255,255,255);
+            }
+            </style>
+            <script>
+                $(document).ready(function(){
+                    setCategoryClicks();
+                });
+            </script>
+        </section><section id="about">
+            <div class="sectionOverlay" id="aboutOverlay" style="background: rgba(0, 0, 0, 0)"></div>
+            <div id="outerAbout" class="outerSection noCustomElement">
+    <div id="aboutContainer" class="sectionContainer noCustomElement">
+        <div id="aboutContent" class="sectionContent container-fluid noCustomElement">
+            <div class="row noCustomElement">
+                <div id="aboutTitleWrap" class="col-lg-12 col-xs-12">
+                    <h2 id="aboutTitle" class="aboutTitles" altonclick="null" althref="null">Learn More</h2>
+                </div>
+            </div>
+            <div class="row noCustomElement">
+                <div id="aboutParaWrap" class="col-lg-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 noCustomElement">
+                    <div id="aboutParagraph1Wrap"><p id="aboutParagraph1" class="aboutParagraph" altonclick="null" althref="null">Get the outcomes that you merit when you request assistance from our Blogging experts! This knowledge can be utilized to analyze everything necessary to always ensure a comprehensive, dignified approach to unified problem solving. Our dependable services will always work to convey everything required to get you set up in the most effective way possible.</p></div>
+                    <div id="aboutParagraph2Wrap"><p id="aboutParagraph2" class="aboutParagraph" altonclick="null" althref="null">We are one of the the top Blogging solutions in the area. We have been giving high caliber, intensely evaluated Blogging solutions to all who come to us for years. In that time, we have found out about client administration and the benefit of realizing our customers needs. We adore driving by ordinary and perceiving how extraordinary we can become together!</p></div>
+                </div>
+            </div>
+            <div id="aboutImageWrap" class="row noCustomElement">
+                <div class="col-lg-4 col-lg-offset-4 noCustomElement">
+                    <div id="aboutImage1"><img class="aboutImages" src="/img/uPrqT-IMhqO-3kjJE-KDwYM-99rG6.jpg" altonclick="null" althref="null"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #about {
+            color: black;
+        }
+
+        #about .aboutImageBg {
+            color: white;
+        }
+        
+        #aboutContent {
+            text-align: center;
+            padding-top: 0 !important;
+        }
+
+        #aboutTitleWrap {
+            padding: 45px 0;
+            background-color: rgba(151,76,70,0.7);
+            color: white;
+        }
+
+        #aboutTitle {
+            color: white;
+            font-size: 32px;
+        }
+
+        #aboutParaWrap {
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+
+        .aboutParagraph {
+            line-height: 1.9;
+        }
+
+        #aboutParagraph1 {
+            margin-bottom: 24px;
+        }
+
+        #aboutImageWrap {
+            margin-bottom: 64px;
+        }
+
+        .aboutImages {
+            width: 100%;
+        }
+
+        #about .aboutImageBg .aboutImages {
+            border: 1px solid white;
+        }
+
+        #about .customTitle {
+            font-size: 32px;
+            display: block;
+        }
+
+        #about .customParagraph {
+            font-size: 14px;
+            line-height: 1.9;
+            display: block;
+        }
+
+        #about .customLink {
+            color: black;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+        }
+
+        #about .aboutImageBg .customLink {
+            color: white;
+        }
+
+        #about .customLink:hover {
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+        #about .customIcon {
+            font-size: 30px;
+        }
+
+        #about .customTitle,
+        #about .customParagraph,
+        #about .customLink,
+        #about .customIcon,
+        #about .customButton,
+        #about .customImage,
+        #about .customEmbed {
+            margin: 10px 0;
+        }
+
+        #about #aboutTitleWrap .customLink {
+            color: white;
+        }
+        
+        #about #aboutTitleWrap .customTitle,
+        #about #aboutTitleWrap .customParagraph,
+        #about #aboutTitleWrap .customLink,
+        #about #aboutTitleWrap .customIcon,
+        #about #aboutTitleWrap .customButton,
+        #about #aboutTitleWrap .customImage,
+        #about #aboutTitleWrap .customEmbed,
+        #about #aboutParagraph2Wrap .customTitle,
+        #about #aboutParagraph2Wrap .customParagraph,
+        #about #aboutParagraph2Wrap .customLink,
+        #about #aboutParagraph2Wrap .customIcon,
+        #about #aboutParagraph2Wrap .customButton,
+        #about #aboutParagraph2Wrap .customImage,
+        #about #aboutParagraph2Wrap .customEmbed,
+        #about #aboutImage1 .customTitle,
+        #about #aboutImage1 .customParagraph,
+        #about #aboutImage1 .customLink,
+        #about #aboutImage1 .customIcon,
+        #about #aboutImage1 .customButton,
+        #about #aboutImage1 .customImage,
+        #about #aboutImage1 .customEmbed {
+            margin: 20px 0 0;
+        }
+        
+        #about #aboutParagraph1Wrap .customTitle,
+        #about #aboutParagraph1Wrap .customParagraph,
+        #about #aboutParagraph1Wrap .customLink,
+        #about #aboutParagraph1Wrap .customIcon,
+        #about #aboutParagraph1Wrap .customButton,
+        #about #aboutParagraph1Wrap .customImage,
+        #about #aboutParagraph1Wrap .customEmbed {
+            margin: 0 0 30px;
+        }
+
+        @media only screen and (max-width : 800px) {
+
+            #aboutImage1 {
+                margin-bottom: 18px;
+            }
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            #aboutTitleWrap {
+                padding: 56px 10px;
+            }
+
+            #about #aboutTitleWrap .customImage {
+                padding: 0 30px;
+            }
+        }
+    </style>
+</div>
+            <style>
+                #aboutContainer {
+                background: rgb(255,255,255);
+            }
+            </style>
+        </section><section id="contact">
+            <div class="sectionOverlay" id="contactOverlay" style="background: rgba(0, 0, 0, 0)"></div>
+            <div id="outerContact" class="outerSection noCustomElement">
+    <div id="contactContainer" class="sectionContainer noCustomElement" style="margin-bottom: 0px;">
+        <div id="contactContent" class="sectionContent container-fluid noCustomElement">
+            <div class="row noCustomElement">
+                <div id="contactWrap" class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 noCustomElement">
+                    <div class="row noCustomElement">
+                        <div class="col-sm-12">
+                            <div id="contactTitleWrap"><h2 id="contactTitle" class="contactTitles" altonclick="null" althref="null">Contact</h2></div>
+                        </div>
+                    </div>
+                    <div class="row noCustomElement">
+                        <div class="col-sm-12 noCustomElement">
+                            <form id="contactForm"> 
+                                <div id="contactRowContainer" class="noCustomElement">
+                                    <!-- inputTemplate start --><div class="input2 row">
+                                        <div class="contactTemplate form-group col-sm-6 noCustomElement">
+                                            <input id="contactName" type="text" class="contactFormStyle contactFormInput form-control" placeholder="Name">
+                                        </div>
+                                        
+                                        <div class="contactTemplate form-group col-sm-6 noCustomElement">
+                                            <input id="contactEmail" type="text" class="contactFormStyle contactFormInput form-control" placeholder="Email">
+                                        </div>
+                                        </div><!-- inputTemplate end -->
+                                </div>
+                                <div class="form-row row noCustomElement">
+                                    <div class="form-group col-sm-12 noCustomElement">
+                                        <textarea id="contactMessage" class="contactFormStyle form-control" placeholder="Enter your message here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row row noCustomElement">
+                                    <div class="form-group col-sm-12 noCustomElement">
+                                        <div id="contactButtons"><a class="contactButton" althref="null" onclick="submitContactForm()">Submit</a></div>
+                                    </div>
+                                </div>    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #contact {
+            color: black;
+        }
+
+        #contact .contactImageBg {
+            color: white;
+        }
+
+        #contactContent {
+            word-wrap: break-word;
+            text-align: center;
+            background-color: rgba(151,76,70,0.2);
+        }
+
+        #contact .contactImageBg #contactContent {
+            background-color: transparent;
+        }
+
+        #contactTitleWrap {
+            margin: 40px 0 60px;
+        }
+
+        #contactTitle {
+            color: rgb(151,76,70);
+            font-size: 50px;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            margin-bottom: 10px;
+        }
+
+        #contact .contactImageBg #contactTitle {
+            color: white;
+        }
+
+        .contactFormStyle {
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid rgb(151,76,70);
+            border-radius: 0;
+            color: rgb(151,76,70);
+        }
+
+        #contact .contactImageBg .contactFormStyle {
+            border-color: white;
+            color: white;
+        }
+
+        .contactFormStyle::placeholder {
+            color: rgb(151,76,70);
+        }
+
+        #contact .contactImageBg .contactFormStyle::placeholder {
+            color: white;
+        }
+
+        #contactMessage {
+            height: 100px;
+            resize: none;
+        }
+
+        #contactButtons {
+            margin: 20px 0 40px;
+        }
+
+        .contactButton {
+            color: rgb(151,76,70);
+            padding: 6px 42px;
+            border: 2px solid rgb(151,76,70);
+            border-radius: 3px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.5s;
+            display: inline-block;
+        }
+
+        .contactButton:focus {
+            color: rgb(151,76,70);
+        }
+
+        #contact .contactImageBg .contactButton,
+        #contact .contactImageBg .contactButton:focus {
+            color: white;
+            border-color: white;
+        }
+
+        .contactButton:hover {
+            color: white;
+            background-color: rgb(151,76,70);
+            text-decoration: none;
+        }
+
+        /* * * * * * * * */
+
+        #contact .customTitle {
+            font-size: 40px;
+            display: block;
+        }
+
+        #contact .customParagraph {
+            font-size: 18px;
+            display: block;
+        }
+
+        #contact .customLink {
+            color: rgb(151,76,70);
+            font-size: 18px;
+            display: block;
+            width: 100%;
+        }
+
+        #contact .contactImageBg .customLink {
+            color: white;
+        }
+
+        #contact .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        #contact .customIcon {
+            font-size: 36px;
+        }
+
+        #contact .customTitle,
+        #contact .customParagraph,
+        #contact .customLink,
+        #contact .customIcon,
+        #contact .customButton,
+        #contact .customImage,
+        #contact .customEmbed {
+            margin: 10px 0;
+        }
+
+        #contact .customTitle,
+        #contact .customParagraph,
+        #contact .customLink,
+        #contact .customIcon {
+            color: rgb(151,76,70);
+        }
+        
+        #contact .contactImageBg .customTitle,
+        #contact .contactImageBg .customParagraph,
+        #contact .contactImageBg .customLink,
+        #contact .contactImageBg .customIcon {
+            color: white;
+        }
+
+        #contact #contactTitleWrap .customIcon,
+        #contact #contactTitleWrap .customButton,
+        #contact #contactTitleWrap .customImage {
+            margin: 0 0 10px;
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            #contactTitle {
+                font-size: 30px;
+            }
+            
+            #contact .customTitle {
+                font-size: 30px;
+            }
+
+            #contact .customParagraph,
+            #contact .customLink {
+                font-size: 16px;
+            }
+        }
+        
+        @media only screen and (max-width : 320px) {
+
+            #contactTitle {
+                font-size: 25px;
+            }
+
+            #contact .customTitle {
+                font-size: 25px;
+            }
+        }
+    </style>
+</div>
+            <style>
+                #contactContainer {
+                background: rgb(255,255,255);
+            }
+            </style>
+        </section><div id="footer">
+    <h4 class="pageFooter" id="footerFour" altonclick="null" althref="null">© 818 post </h4>
+</div>
+
+<div id="newsletterOuter" delay="20000" enabled="false" style="display:none" class="noCustomElement">
+    <div id="newsOverlaySection" class="noCustomElement">
+        <div class="row innerTableContent noCustomElement">
+            <div id="newsletterBorder" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 noCustomElement">
+                <button id="closeNewsletterButton" class="newsletterClose" althref="null" onclick="document.getElementById(&quot;newsletterOuter&quot;).style.display = &quot;none&quot;">
+                    <i class="newsletterCloseIcon fa fa-times" aria-hidden="true" altonclick="null" althref="null"></i>
+                </button>
+                <div id="newsletterTitleWrap"><h3 id="newsletterTitle" class="newsletterTitles" altonclick="null" althref="null">BE THE FIRST TO KNOW</h3></div>
+                <div id="newsletterSubtitleWrap"><h4 id="newsletterSubtitle" class="newsletterSubtitles" altonclick="null" althref="null">Sign up for our newsletter and be the first to hear about special sales, new products &amp; more!</h4></div>
+                <form id="newsletterForm"> 
+                    <div id="newsletterRowContainer"> 
+                        <input id="newsletterInput" type="email" class="form-control" placeholder="Enter Your Email Address">
+                        <a id="newsletterButton" class="newsletterButton" althref="null" onclick="submitNewsletter()">Subscribe</a>
+                    </div>
+                </form>
+                <div id="newsletterSubtitle2Wrap"><h4 id="newsletterSubtitle2" class="newsletterSubtitles2" altonclick="null" althref="null">JOIN US ON SOCIAL MEDIA!</h4></div>
+                <div id="newsletterIconWrap">
+                    <i id="newsletterFacebook" class="newsletterIcons fab fa-facebook-f" altonclick="null" althref="null"></i>
+                    <i id="newsletterTwitter" class="newsletterIcons fab fa-twitter" altonclick="null" althref="null"></i>
+                    <i id="newsletterInstagram" class="newsletterIcons fab fa-instagram" altonclick="null" althref="null"></i>
+                    <i id="newsletterYoutube" class="newsletterIcons fab fa-youtube" altonclick="null" althref="null"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        #newsLetterOuter {
+            word-break: break-word;
+        }
+
+        #closeNewsletterButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            font-size: 18px;
+            background: transparent;
+            cursor: pointer;
+            color: white;
+            transition: 0.5s;
+        }
+
+        #closeNewsletterButton:hover {
+            opacity: 0.6;
+        } 
+
+        #newsOverlaySection {
+            display: table;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            text-align: center;
+        }
+
+        #newsletterBorder {
+            border: 2px solid white;
+            background-color: rgba(151,76,70,0.9);
+            border-radius: 5px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #newsletterTitle {
+            color: white;
+            font-size: 40px;
+            margin-top: 60px;
+        }
+
+        #newsletterSubtitle {
+            color: white;
+            font-size: 16px;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        #newsletterInput {
+            font-size: 12px;
+            width: 50%;
+            height: 40px;
+            margin: 30px auto 10px; 
+            border-radius: 0;
+            border-color: white;
+            color: black;
+            text-align: center;
+        }
+
+        #newsletterInput::placeholder {
+            color: rgb(151,76,70);
+        }
+        
+        #newsletterInput:focus {
+            box-shadow: 0 0 3px white;
+        }
+
+        #newsletterButton {
+            color: white;
+            font-size: 18px;
+            padding: 6px 32px;
+            margin: 0 0 20px;
+            text-decoration: none;
+            background: rgb(151,76,70);
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            display: inline-block;
+        }
+
+        #newsletterButton:focus {
+            color: white;
+        }
+
+        #newsletterButton:hover {
+            color: rgb(151,76,70);
+            background: white;
+        }
+
+        #newsletterSubtitle2 {
+            color: white;
+            font-size: 12px;
+        }
+
+        #newsletterIconWrap {
+            margin: 10px 0 30px;
+        }
+
+        .newsletterIcons {
+            font-size: 26px;
+            background: white;
+            color: rgb(151,76,70);
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: 0 3px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        #newsletterFacebook {
+            padding: 8px 14px;
+        }
+        
+        #newsletterTwitter {
+            padding: 8px;
+        }
+        
+        #newsletterInstagram {
+            padding: 8px 10px;
+        }
+        
+        #newsletterYoutube {
+            padding: 8px 6px;
+        }
+
+        .newsletterIcons:hover {
+            color: white;
+            background: rgb(151,76,70);
+        }
+
+        /* * * * * * * * */
+
+        #newsletterOuter .customTitle {
+            font-size: 40px;
+            display: block;
+        }
+
+        #newsletterOuter .customParagraph {
+            font-size: 18px;
+            display: block;
+        }
+
+        #newsletterOuter .customLink {
+            font-size: 18px;
+            display: block;
+            width: 100%;
+        }
+
+        #newsletterOuter .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        #newsletterOuter .customIcon {
+            font-size: 28px;
+        }
+
+        #newsletterOuter .customTitle,
+        #newsletterOuter .customParagraph,
+        #newsletterOuter .customLink,
+        #newsletterOuter .customIcon,
+        #newsletterOuter .customButton,
+        #newsletterOuter .customImage,
+        #newsletterOuter .customEmbed {
+            margin: 10px 0;
+        }
+
+        #newsletterOuter .customTitle,
+        #newsletterOuter .customParagraph,
+        #newsletterOuter .customLink,
+        #newsletterOuter .customIcon {
+            color: white;
+        }
+
+        @media only screen and (max-width : 500px) {
+
+            #newsletterTitle {
+                font-size: 35px;
+            }
+
+             #newsletterSubtitle {
+                width: 80%;
+            }
+
+            #newsletterInput {
+                width: 90%;
+            }
+        }
+    </style>
+</div>
+
+<script id="generalJS">
+    $(document).ready(function() {
+        loadLeiaAd();
+        initializeSmoothScroll();
+        if (window.self !== window.top) {
+            if (document.getElementById('menuOverlaySection')) {
+                document.getElementById('menuOverlaySection').style.height = window.parent.innerHeight.toString() + 'px';
+            }
+            
+            if (document.getElementById('menuBorder')) {
+                document.getElementById('menuBorder').style.maxHeight = window.parent.innerHeight.toString() + 'px';
+            }
+            
+            if (window.orientation !== undefined && document.getElementById('headerBackgroundVideo')) {
+                updateBgimageSizes();
+                window.addEventListener('orientationchange', function() {
+                    updateBgimageSizes();
+                });
+            }
+        } else if (document.getElementById('newsletterOuter') && document.getElementById('newsletterOuter').getAttribute('enabled') === 'true') {
+            var time = parseInt(document.getElementById('newsletterOuter').getAttribute('delay'));
+            if (time > 0) {
+                setTimeout(function() {
+                    $('#newsletterOuter').css('opacity', '0');
+                    $('#newsletterOuter').css('display', '');
+                    $('#newsletterOuter').animate({opacity: '1'}, 1000);
+                }, time);
+            }
+        }
+    });
+    
+    var initializeSmoothScroll = function() {
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1000);
+        });
+    }
+    
+    var updateBgimageSizes = function() {
+        document.getElementById('headerBackgroundVideo').style.height = document.getElementById('headerContainer').offsetHeight.toString() + 'px';
+    }
+
+    var loadLeiaAd = function() {
+        /*$.ajax({
+            url: 'https://heyleia.com/php/getAdStatus.php',
+            type: 'GET',
+            data: {'domain': window.location.hostname},
+            success: function(type) {
+                if (type === 'ad') {
+                    addLeiaAd();
+                }
+            },
+            error: function(err) {
+                console.log(err);
+            }
+        });*/
+    }
+    
+    var meetingToken;
+    var submitVideoChat = function() {
+        var name = document.getElementById('videoName').value;
+        var email = document.getElementById('videoEmail').value;
+
+        document.getElementById('launchChatButton').disabled = true;
+
+        var spinner = document.createElement('div');
+        var outer = document.createElement('div');
+
+        outer.id = 'spinnerLoading';
+        spinner.className = 'spinnerLoading';
+        outer.style.background = 'rgba(0,0,0,0.7)';
+        outer.style.borderRadius = '20px';
+        outer.style.position = 'fixed';
+        outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+        outer.style.width = '205px';
+        outer.style.top = '30%';
+        outer.style.height = '205px';
+        outer.style.zIndex = '10000';
+        spinner.style.marginLeft = '42.5px';
+        spinner.style.marginTop = '42.5px';
+        outer.appendChild(spinner);
+        document.body.appendChild(outer);
+
+        if (!addedSpinner) {
+            addedSpinner = true;
+            addSpinnerStyle();
+        }
+
+        $.ajax({
+            url: 'https://heyleia.com/php/scheduleMeeting.php',
+            type: 'POST',
+            data: {name: name, email: email, partner: ''},
+            success: function(data) {
+                meetingToken = data;
+                document.getElementById('launchChatButton').disabled = false;
+                swal('Meeting Ready', 'Click the "Launch Meeting" button to start your video chat.', 'success');
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+            },
+            error: function(err) {
+                console.log(err);
+                swal('Uh Oh', 'There was an error scheduling your live chat. Please try again in a few minutes!', 'error');
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+            }
+        })
+    }
+
+    var launchVideoChat = function() {
+        window.open('https://leia-azvh8tqtk7harcvqerv2elgw7.braidio.com/meetings/' + meetingToken, '_blank');
+    }
+
+    var showVideo = function() {
+        document.getElementById('videoChatOverlay').style.display = '';
+    }
+
+    var closeVideo = function() {
+        document.getElementById('videoChatOverlay').style.display = 'none';
+    }
+    
+    var shownSchedule = false;
+    var showSchedule = function() {
+        document.getElementById('schedulingOverlay').style.display = '';
+        
+        if (shownSchedule) {
+            var frame = document.getElementById('schedulingOverlay').getElementsByTagName('iframe')[0];
+            var src = frame.getAttribute('src').split('&v')[0];
+            frame.setAttribute('src', src + '&v=' + new Date().getTime());
+        }
+        
+        shownSchedule = true;
+    }
+    
+    var closeSchedule = function() {
+        document.getElementById('schedulingOverlay').style.display = 'none';
+    }
+
+    var addLeiaAd = function() {
+        var img = document.createElement('img');
+        var tag = document.createElement('a');
+        img.id = 'leiaAdLogo';
+        tag.id = 'leiaAdLogoA';
+        img.setAttribute('src', 'https://heyleia.com/images/poweredBy.png');
+
+        if (window.self === window.top && window.location.search !== '?site=live') {
+            tag.setAttribute('href', 'https://heyleia.com/direct?src=site');
+            tag.setAttribute('target', '_blank');
+        } else {
+            img.onclick = function() {
+                if (window.location.search === '?site=live') {
+                    swal('Remove Leia Ad', 'You can remove this ad by upgrading to Leia Pro! This includes hosting and everything else you need for your site.', 'info');
+                } else {
+                    swal({
+                        title: 'Remove Leia Ad',
+                        text: 'You can remove this ad by upgrading to Leia Pro! This includes hosting and everything else you need for your site.',
+                        type: 'info',
+                        icon: 'info',
+                        closeOnClickOutside: true,
+                        showCancelButton: true,
+                        buttons: {
+                            cancel: 'Not Now',
+                            submit: {
+                                text: 'Learn More',
+                                value: 'learn',
+                            }
+                        },
+                        closeOnConfirm: true
+                    }).then(function(isConfirm) {
+                        if (isConfirm == 'learn') {
+                            window.open('https://heyleia.com/upgrade', '_blank');
+                        } 
+                    }); 
+                }
+            }
+        }
+
+        tag.appendChild(img);
+        document.body.appendChild(tag);
+    }
+    
+    var mainColor = 'rgb(151,76,70)';
+    
+    var applyFancyTop = function(top) {
+        if (document.getElementById('fancyStyle')) {
+            document.getElementById('fancyStyle').parentElement.removeChild(document.getElementById('fancyStyle'));
+        }
+        
+        var style = document.createElement('style');
+        style.id = 'fancyStyle';
+        var txt = document.createTextNode('#fancybox-wrap {top: ' + top.toString() + 'px !important;}');
+        style.appendChild(txt);
+        document.body.appendChild(style);
+    }
+    
+    var addedSpinner = false;
+    var submitContactForm = function() {
+        swal("Are you sure you want to submit this message?", {
+            buttons: {
+                no: {
+                    text: "Cancel",
+                    value: "Cancel",
+                    className: 'swal-button swal-button--cancel',
+                    closeModal: false,
+                },
+                yes: {
+                    text: "Submit",
+                    value: "ok"
+                },
+            },
+            title: 'Confirmation',
+            type: 'info',
+            icon: 'info'
+        }).then((value) => {
+            if (value === 'Cancel') {
+                swal.close();
+            } else {
+                var spinner = document.createElement('div');
+                var outer = document.createElement('div');
+
+                outer.id = 'spinnerLoading';
+                spinner.className = 'spinnerLoading';
+                outer.style.background = 'rgba(0,0,0,0.7)';
+                outer.style.borderRadius = '20px';
+                outer.style.position = 'fixed';
+                outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+                outer.style.width = '205px';
+                outer.style.top = '30%';
+                outer.style.height = '205px';
+                outer.style.zIndex = '10000';
+                spinner.style.marginLeft = '42.5px';
+                spinner.style.marginTop = '42.5px';
+                outer.appendChild(spinner);
+                document.body.appendChild(outer);
+
+                if (!addedSpinner) {
+                    addedSpinner = true;
+                    addSpinnerStyle();
+                }
+
+                var dataObj = {}
+                if (document.getElementById('contactName')) {
+                    dataObj['name'] = document.getElementById('contactName').value;
+                }
+                if (document.getElementById('contactEmail')) {
+                    dataObj['email'] = document.getElementById('contactEmail').value;
+                }
+                if (document.getElementById('contactPhone')) {
+                    dataObj['phone'] = document.getElementById('contactPhone').value;
+                }
+                if (document.getElementById('contactCompany')) {
+                    dataObj['company'] = document.getElementById('contactCompany').value;
+                }
+                if (document.getElementById('contactStreet')) {
+                    dataObj['street'] = document.getElementById('contactStreet').value;
+                }
+                if (document.getElementById('contactCity')) {
+                    dataObj['city'] = document.getElementById('contactCity').value;
+                }
+                if (document.getElementById('contactState')) {
+                    dataObj['state'] = document.getElementById('contactState').value;
+                }
+                if (document.getElementById('contactSubject')) {
+                    dataObj['subject'] = document.getElementById('contactSubject').value;
+                }
+                if (document.getElementById('contactMessage')) {
+                    dataObj['message'] = document.getElementById('contactMessage').value;
+                }
+
+                $.ajax({
+                    url: 'https://heyleia.com/php/clientContact.php',
+                    data: dataObj,
+                    type: 'POST',
+                    success: function(data) {
+                        document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                        if (data === 'success') {
+                            swal("Success", "You have successfully submitted your message! We will contact you at our earliest convenience.", "success");
+                            document.body.className = '';
+                        } else {
+                            swal("Uh Oh!", data, "error");
+                            document.body.className = '';
+                        }
+                    },
+                    error: function(err) {
+                        console.log(err);
+                        document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                        swal("Uh Oh!", "There was a problem. Please try again later.", "error");
+                        document.body.className = '';
+                    }
+                });
+            }
+        });
+    }
+    
+    var submitNewsletter = function() {
+        var spinner = document.createElement('div');
+        var outer = document.createElement('div');
+
+        outer.id = 'spinnerLoading';
+        spinner.className = 'spinnerLoading';
+        outer.style.background = 'rgba(0,0,0,0.7)';
+        outer.style.borderRadius = '20px';
+        outer.style.position = 'fixed';
+        outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+        outer.style.width = '205px';
+        outer.style.top = '30%';
+        outer.style.height = '205px';
+        outer.style.zIndex = '10000';
+        spinner.style.marginLeft = '42.5px';
+        spinner.style.marginTop = '42.5px';
+        outer.appendChild(spinner);
+        document.body.appendChild(outer);
+
+        if (!addedSpinner) {
+            addedSpinner = true;
+            addSpinnerStyle();
+        }
+
+        var dataObj = {
+            email: document.getElementById('newsletterInput').value
+        }
+        
+        $.ajax({
+            url: 'https://heyleia.com/php/clientNewsletter.php',
+            data: dataObj,
+            type: 'POST',
+            success: function(data) {
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                if (data === 'success') {
+                    swal("Success", "You have successfully subscribed to our mailing list!", "success").then(function() {
+                        document.getElementById('newsletterOuter').style.display = 'none';
+                    });
+                    
+                    document.body.className = '';
+                } else {
+                    swal("Uh Oh!", data, "error");
+                    document.body.className = '';
+                }
+            },
+            error: function(err) {
+                console.log(err);
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                swal("Uh Oh!", "There was a problem. Please try again later.", "error");
+                document.body.className = '';
+            }
+        });
+    }
+    
+    var addSpinnerStyle = function() {
+        var style = document.createElement('style');
+        style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
+        document.body.appendChild(style);
+    };
+</script>
+</body></html>
